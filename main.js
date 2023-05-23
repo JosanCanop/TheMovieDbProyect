@@ -49,7 +49,7 @@ function getMovies(idGenero, idProvider) {
     .then((result) => {
       document.getElementById("pelis").innerHTML = "";
       for (const show of result.results) {
-        document.getElementById("pelis").innerHTML += ` <div class="bg-white rounded-lg shadow-lg">
+        document.getElementById("pelis").innerHTML += ` <div class="bg-white rounded-lg shadow-lg hover:scale-110">
       
               <img class="h-[277px] w-full object-cover rounded-t-lg" src="https://image.tmdb.org/t/p/w500${show.poster_path}" alt="">
       
